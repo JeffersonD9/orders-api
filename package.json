@@ -1,0 +1,27 @@
+{
+  "name": "orders-api",
+  "version": "1.0.0",
+  "description": "API REST - connected with a db psql",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffersonD9/orders-api.git"
+  },
+  "author": "Jefferson Muñoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffersonD9/orders-api/issues"
+  },
+  "homepage": "https://github.com/JeffersonD9/orders-api#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.1"
+  }
+}
