@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv'
 import cors from 'cors';
+import morgan from 'morgan';
 
 //Load env vars
 dotenv.config()
@@ -12,6 +13,8 @@ app.use(cors({
   origin: 'https://orders-web.vercel.app',  // hace falta añadir el fronted que podria acceder a esta API
   credentials: true
 }))
+
+app.use(morgan("dev"));
 
 if (NODE_ENV !== "development") {
   console.log = function () { };
