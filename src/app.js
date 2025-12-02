@@ -14,11 +14,10 @@ app.use(cors({
   credentials: true
 }))
 
-app.use(morgan("dev"));
-
-if (NODE_ENV !== "development") {
+if (NODE_ENV !== "development")
   console.log = function () { };
-}
+else
+  app.use(morgan('dev'))
 
 app.set("port", PORT);
 app.use(express.urlencoded({ extended: false }));
